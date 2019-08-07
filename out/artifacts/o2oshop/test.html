@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type='text/javascript'
+            src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript'
+            src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript'
+            src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var max = 10000;
+            var testurl = '/o2oshop/fronted/test?productId=15';
+            for (var i = 1; i <=max ; i++) {
+                $.ajax({
+                    url:testurl,
+                    type: 'POST',
+                    contentType: false,
+                    processData: false,
+                    cache: false,
+                    success:function (data) {
+
+                    }
+                })
+            }
+        })
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>

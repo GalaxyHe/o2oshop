@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.o2o.dao.AreaDao">
+    <!--自定义映射集-->
+    <resultMap id="areamap" type="com.o2o.pojo.Area">
+        <id column="area_id" property="areaId"/>
+        <result column="area_name" property="areaName"/>
+        <result column="area_desc" property="areaDesc"/>
+        <result column="priority" property="priority"/>
+        <result column="create_time" property="createTime"/>
+        <result column="last_edit_time" property="lastEditTime"/>
+    </resultMap>
+
+    <select id="searchall" resultMap="areamap" resultType="com.o2o.pojo.Area">
+        SELECT * FROM tb_area ORDER BY priority DESC
+    </select>
+
+</mapper>

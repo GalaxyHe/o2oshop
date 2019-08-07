@@ -1,0 +1,18 @@
+package com.o2o.test;
+
+import org.junit.runner.RunWith;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+/**
+ * @author He
+ * @Date 2019/7/29
+ * @Time 17:04
+ * @Description TODO
+ **/
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration({"classpath:spring/spring-dao.xml","classpath:spring/spring-service.xml"})
+public class basetest {
+
+}
